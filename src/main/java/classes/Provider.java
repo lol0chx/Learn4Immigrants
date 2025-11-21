@@ -8,7 +8,6 @@ public class Provider {
     private  String contactInfo ;
 
 
-
     //  contractor
 
     public Provider(String name, String contactInfo) {
@@ -29,5 +28,10 @@ public class Provider {
 
     public void setContactInfo(String contactInfo) {
         this.contactInfo = contactInfo;
+    }
+
+    // method
+    public  String getInfo(){
+        return  "Provider " +  name+ " | Contact: "  + contactInfo;
     }
 }
