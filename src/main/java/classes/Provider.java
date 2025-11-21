@@ -32,6 +32,6 @@ public class Provider {
 
     // method
     public  String getInfo(){
-        return  "Provider " +  name+ " | Contact: "  + contactInfo;
+        return  "Provider: " +  name + " |Contact: "  + contactInfo;
     }
 }

@@ -8,20 +8,26 @@ class ProviderTest {
 
     @Test
     void getInfo() {
+
         // arrange
-        Provider provider = new Provider("Yearup United ", "hana@yearupUnited.org");
+        Provider provider = new Provider("Yearup United", "hana@yearupUnited.org");
 
         // act
         String info = provider.getInfo();
 
-        // assertions
-         // check provider name
+        // assert provider name
         assertEquals("Yearup United", provider.getName());
-        //  check provider info
-        assertEquals("hana@yearupUnited.org", provider.getInfo());
 
-        // check full getInfo() output
+        // assert contact info
+        assertEquals("hana@yearupUnited.org", provider.getContactInfo());
+
+        // assert full info output
         assertEquals(
-                "Provider : Yearup United | Contact :  hana@yearupUnited.org", info );
+                "Provider: Yearup United |Contact: hana@yearupUnited.org",
+                info
+        );
+
+
+
     }
 }
