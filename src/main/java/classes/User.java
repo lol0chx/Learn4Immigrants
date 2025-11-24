@@ -13,14 +13,18 @@ public class User {
     public User(String name, String email, int age, ImmigrationCategory immigrationCategory) {
         this.name = name;
         this.email = email;
+
         this.age = age;
         this.immigrationCategory = immigrationCategory;
         this.savedResources = new ArrayList<>();
     }
 
+
+    // Getters
     public String getName() {
         return name;
     }
+
 
     public void setName(String name) {
         this.name = name;
@@ -34,21 +38,32 @@ public class User {
         this.email = email;
     }
 
+
     public int getAge() {
         return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public ImmigrationCategory getImmigrationCategory() {
         return immigrationCategory;
     }
 
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+
     public void setImmigrationCategory(ImmigrationCategory immigrationCategory) {
         this.immigrationCategory = immigrationCategory;
     }
+
+
+}
 
     public List<EducationalResource> getSavedResources() {
         return savedResources;
