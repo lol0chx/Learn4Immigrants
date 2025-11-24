@@ -1,28 +1,43 @@
 package classes;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class User {
-    // Basic user attributes
     private String name;
+    private String email;
     private int age;
     private ImmigrationCategory immigrationCategory;
-    private List<String> savedResources; // Will store resource IDs or titles
+    private List<EducationalResource> savedResources;
 
-    // Constructor
-    public User(String name, int age, ImmigrationCategory immigrationCategory) {
+    public User(String name, String email, int age, ImmigrationCategory immigrationCategory) {
         this.name = name;
+        this.email = email;
+
         this.age = age;
         this.immigrationCategory = immigrationCategory;
         this.savedResources = new ArrayList<>();
     }
 
+
     // Getters
     public String getName() {
         return name;
     }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 
     public int getAge() {
         return age;
@@ -32,45 +47,46 @@ public class User {
         return immigrationCategory;
     }
 
-    public List<String> getSavedResources() {
-        return new ArrayList<>(savedResources); // Return copy for encapsulation
-    }
-
     // Setters
     public void setName(String name) {
         this.name = name;
     }
 
+
     public void setAge(int age) {
         this.age = age;
     }
+
 
     public void setImmigrationCategory(ImmigrationCategory immigrationCategory) {
         this.immigrationCategory = immigrationCategory;
     }
 
-    // Methods for managing saved resources
-    public void saveResource(String resourceId) {
-        if (!savedResources.contains(resourceId)) {
-            savedResources.add(resourceId);
-        }
-    }
-
-    public void removeSavedResource(String resourceId) {
-        savedResources.remove(resourceId);
-    }
-
-    // Display methods
-    public void viewSavedResources() {
-        System.out.println("Saved Resources for " + name + ":");
-        if (savedResources.isEmpty()) {
-            System.out.println("  No saved resources yet.");
-        } else {
-            for (String resource : savedResources) {
-                System.out.println("  - " + resource);
-            }
-        }
-    }
-
 
 }
+
+    public List<EducationalResource> getSavedResources() {
+        return savedResources;
+    }
+
+    public void setSavedResources(List<EducationalResource> savedResources) {
+        this.savedResources = savedResources;
+    }
+
+    public List<EducationalResource> viewAvailableResources() {
+        // This method would typically fetch resources from a repository or service
+        // For now, returning an empty list as placeholder
+        return new ArrayList<>();
+    }
+
+    public void saveResource(EducationalResource r) {
+        if (r != null && !savedResources.contains(r)) {
+            savedResources.add(r);
+        }
+    }
+
+    public List<EducationalResource> viewSavedResources() {
+        return new ArrayList<>(savedResources);
+    }
+}
+
