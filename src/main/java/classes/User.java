@@ -9,6 +9,7 @@ public class User {
     private int age;
     private ImmigrationCategory immigrationCategory;
     private List<EducationalResource> savedResources;
+    private String location;
 
     public User(String name, String email, int age, ImmigrationCategory immigrationCategory) {
         this.name = name;
@@ -16,6 +17,15 @@ public class User {
         this.age = age;
         this.immigrationCategory = immigrationCategory;
         this.savedResources = new ArrayList<>();
+    }
+
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getName() {
