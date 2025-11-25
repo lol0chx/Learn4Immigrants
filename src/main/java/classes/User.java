@@ -10,14 +10,27 @@ public class User {
     private ImmigrationCategory immigrationCategory;
     private List<EducationalResource> savedResources;
     private String location;
+    private String password;
 
-    public User(String name, String email, int age, ImmigrationCategory immigrationCategory) {
+    public User(String name, String email, int age, ImmigrationCategory immigrationCategory, String location, String password) {
         this.name = name;
         this.email = email;
         this.age = age;
         this.immigrationCategory = immigrationCategory;
         this.savedResources = new ArrayList<>();
+        this.location = location;
+        this.password = password;
     }
+    public User(String name, String email, int age, ImmigrationCategory immigrationCategory, String location) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.immigrationCategory = immigrationCategory;
+        this.savedResources = new ArrayList<>();
+        this.location = location;
+
+    }
+
 
 
     public String getLocation() {

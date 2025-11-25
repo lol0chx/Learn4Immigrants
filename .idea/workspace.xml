@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5178909f-4ec3-4d73-a737-e6c5ddc8c87d" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/EducationalResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/EducationalResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/ResourceCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/ResourceCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +31,12 @@
     &quot;assignee&quot;: &quot;ErmiyasHailemichael&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/lol0chx/Learn4Immigrants.git",
-    "accountId": "df7665a7-1ae7-4714-831b-5db69b30e7be"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lol0chx/Learn4Immigrants.git&quot;,
+    &quot;accountId&quot;: &quot;df7665a7-1ae7-4714-831b-5db69b30e7be&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -54,7 +55,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Filtering-&&-Stream-Logic__Tesfahun",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ermi/Desktop/Learn4Immigrants",
@@ -68,7 +69,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classes.Main" />
+      <module name="learn4immigrants" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EducationalResourceServiceTest.testSortByCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn4immigrants" />
       <extension name="coverage">
@@ -87,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.EducationalResourceServiceTest.testSortByCategory" />
       </list>
     </recent_temporary>
