@@ -18,7 +18,7 @@ public class EducationalResourceRepository {
         EducationalResource res1 = new EducationalResource(
             "English Language Course",
             "Learn English for daily life and work.",
-            "http://englishcourse.com",
+            "https://www.kaplaninternational.com/language-schools/united-states",
             ResourceCategory.LANGUAGE.name(),
             provider1,
             req1
@@ -27,7 +27,7 @@ public class EducationalResourceRepository {
         EducationalResource res2 = new EducationalResource(
             "Vocational Training",
             "Get certified in a trade.",
-            "http://vocationaltraining.com",
+            "https://esd.wa.gov/jobs-and-training/job-training-support",
             ResourceCategory.VOCATIONAL.name(),
             provider2,
             req2
@@ -36,7 +36,7 @@ public class EducationalResourceRepository {
         EducationalResource res3 = new EducationalResource(
             "University Admission Guide",
             "Step-by-step guide to applying for university programs.",
-            "http://stateuni.edu/admissions",
+            "https://www.connectionsacademy.com/support/resources/article/online-school-to-college-application-guide/",
             ResourceCategory.UNIVERSITY.name(),
             provider3,
             req3
@@ -45,7 +45,7 @@ public class EducationalResourceRepository {
         EducationalResource res4 = new EducationalResource(
             "International Student Scholarship",
             "Apply for scholarships for international and immigrant students.",
-            "http://scholarships.org/international",
+            "https://www.internationalstudent.com/scholarships/",
             ResourceCategory.SCHOLARSHIP.name(),
             provider4,
             req4
@@ -54,7 +54,7 @@ public class EducationalResourceRepository {
         EducationalResource res5 = new EducationalResource(
             "Spanish Language Course",
             "Learn Spanish for work and community.",
-            "http://spanishcourse.com",
+            "https://www.onlinefreespanish.com/",
             ResourceCategory.LANGUAGE.name(),
             provider1,
             req2
@@ -63,7 +63,7 @@ public class EducationalResourceRepository {
         EducationalResource res6 = new EducationalResource(
             "Tech Vocational Bootcamp",
             "Intensive bootcamp for IT and technology careers.",
-            "http://techbootcamp.com",
+            "https://www.yearup.org/",
             ResourceCategory.VOCATIONAL.name(),
             provider2,
             req1
@@ -72,7 +72,7 @@ public class EducationalResourceRepository {
         EducationalResource res7 = new EducationalResource(
             "STEM University Prep",
             "Preparation resources for STEM university programs.",
-            "http://stateuni.edu/stem-prep",
+            "https://www.zenithprepacademy.com/specialties/stem/",
             ResourceCategory.UNIVERSITY.name(),
             provider3,
             req4
@@ -81,7 +81,7 @@ public class EducationalResourceRepository {
         EducationalResource res8 = new EducationalResource(
             "Merit-Based Scholarship",
             "Scholarships based on academic merit for immigrants.",
-            "http://scholarships.org/merit",
+            "https://meritscholarships.org/",
             ResourceCategory.SCHOLARSHIP.name(),
             provider4,
             req3
