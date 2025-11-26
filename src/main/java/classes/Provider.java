@@ -1,27 +1,30 @@
 package classes;
 
 public class Provider {
-    // private member
+    private String name;
+    private String contactInfo;
+    private String location;   // NEW
 
-
-    private  String name;
-    private  String contactInfo ;
-
-
-    //  contractor
-
-    public Provider(String name, String contactInfo) {
+    public Provider(String name, String contactInfo, String location) {
         this.name = name;
         this.contactInfo = contactInfo;
+        this.location = location;
     }
 
-    // getter and setter
+    // If you still need the old 2-arg constructor, keep it too:
+    public Provider(String name, String contactInfo) {
+        this(name, contactInfo, null);
+    }
+
+    // Getters & setters
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getContactInfo() {
         return contactInfo;
     }
@@ -30,8 +33,17 @@ public class Provider {
         this.contactInfo = contactInfo;
     }
 
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     // method
-    public  String getInfo(){
-        return  "Provider: " +  name + " |Contact: "  + contactInfo;
+    public String getInfo() {
+        return "Provider: " + name + " | Contact: " + contactInfo +
+                (location != null ? " | Location: " + location : "");
     }
 }

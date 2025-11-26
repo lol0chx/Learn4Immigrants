@@ -31,8 +31,6 @@ public class User {
 
     }
 
-
-
     public String getLocation() {
         return location;
     }
@@ -95,6 +93,14 @@ public class User {
 
     public List<EducationalResource> viewSavedResources() {
         return new ArrayList<>(savedResources);
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
 

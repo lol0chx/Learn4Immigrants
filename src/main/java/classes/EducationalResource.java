@@ -12,7 +12,6 @@ public class EducationalResource {
     private Provider provider;
     private Requirements requirements;
 
-
     public EducationalResource(String title, String description, String url,
                                String resourceCategory, Provider provider,
                                Requirements requirements) {
@@ -24,12 +23,10 @@ public class EducationalResource {
         this.requirements = requirements;
     }
 
-
     public boolean checkEligibility(User user) {
         if (requirements == null) return true;
         return requirements.isEligible(user);
     }
-
 
     public String getSummary() {
         return "Title: " + title + "\n" +
@@ -39,7 +36,7 @@ public class EducationalResource {
                 "URL: " + url + "\n";
     }
 
-    // Static methods for filtering, sorting, grouping, mapping, and counting using Streams
+    // -------- Stream helper methods --------
 
     public static List<EducationalResource> filterByEligibility(List<EducationalResource> resources, User user) {
         if (resources == null || user == null) {
@@ -92,7 +89,43 @@ public class EducationalResource {
                 .collect(Collectors.groupingBy(EducationalResource::getResourceCategory, Collectors.counting()));
     }
 
-    // Getters for resourceCategory and provider for streams
+    // -------- NEW: location-based filtering --------
+
+    public static List<EducationalResource> filterByLocation(
+            List<EducationalResource> resources,
+            String locationKeyword
+    ) {
+        if (resources == null) {
+            throw new IllegalArgumentException("Resources must not be null");
+        }
+        if (locationKeyword == null || locationKeyword.isBlank()) {
+            // If user didn't set a location, just return all
+            return resources;
+        }
+
+        String keywordLower = locationKeyword.toLowerCase();
+
+        return resources.stream()
+                .filter(r -> r.getProvider() != null
+                        && r.getProvider().getLocation() != null
+                        && r.getProvider().getLocation().toLowerCase().contains(keywordLower))
+                .collect(Collectors.toList());
+    }
+
+    // -------- Getters --------
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
     public String getResourceCategory() {
         return resourceCategory;
     }

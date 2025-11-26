@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="5178909f-4ec3-4d73-a737-e6c5ddc8c87d" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users" beforeDir="false" afterPath="$PROJECT_DIR$/Users" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/EducationalResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/EducationalResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/EducationalResourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/EducationalResourceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/ImmigrationCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/ImmigrationCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/classes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Provider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Requirements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Requirements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/classes/ResourceCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/ResourceCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/User.java" afterDir="false" />
     </list>
@@ -34,7 +41,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/lol0chx/Learn4Immigrants.git&quot;,
-    &quot;accountId&quot;: &quot;df7665a7-1ae7-4714-831b-5db69b30e7be&quot;
+    &quot;accountId&quot;: &quot;91bef267-b47f-4afb-9392-7e1c067b693e&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -55,7 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "requirements-module",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ermi/Desktop/Learn4Immigrants",
@@ -69,6 +76,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/resources/staticresource/images" />
+      <recent name="$PROJECT_DIR$/src/main/java/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/java/resources/static/images" />
+      <recent name="$PROJECT_DIR$/src/main/java/Web" />
+      <recent name="$PROJECT_DIR$/src/main/java/Web/images" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="classes.Main" />
@@ -99,12 +115,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Learn4ImmigrantsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="learn4immigrants" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="classes.Learn4ImmigrantsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.EducationalResourceServiceTest.testSortByCategory" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-IU-252.26199.169" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -114,6 +145,11 @@
       <option name="presentableId" value="Default" />
       <updated>1764007295492</updated>
       <workItem from="1764007298154" duration="3212000" />
+      <workItem from="1764119984899" duration="24000" />
+      <workItem from="1764120024988" duration="5349000" />
+      <workItem from="1764126145102" duration="81000" />
+      <workItem from="1764126269481" duration="3108000" />
+      <workItem from="1764181553898" duration="2102000" />
     </task>
     <servers />
   </component>
