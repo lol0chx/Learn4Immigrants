@@ -12,7 +12,6 @@ public class EducationalResource {
     private Provider provider;
     private Requirements requirements;
 
-
     public EducationalResource(String title, String description, String url,
                                String resourceCategory, Provider provider,
                                Requirements requirements) {
@@ -24,12 +23,10 @@ public class EducationalResource {
         this.requirements = requirements;
     }
 
-
     public boolean checkEligibility(User user) {
         if (requirements == null) return true;
         return requirements.isEligible(user);
     }
-
 
     public String getSummary() {
         return "Title: " + title + "\n" +
@@ -92,7 +89,27 @@ public class EducationalResource {
                 .collect(Collectors.groupingBy(EducationalResource::getResourceCategory, Collectors.counting()));
     }
 
-    // Getters for resourceCategory and provider for streams
+    // Location-based filter using provider.location
+    public static List<EducationalResource> filterByLocation(
+            List<EducationalResource> resources,
+            String locationKeyword
+    ) {
+        if (resources == null) {
+            throw new IllegalArgumentException("Resources must not be null");
+        }
+        if (locationKeyword == null || locationKeyword.isBlank()) {
+            return resources;
+        }
+
+        String keywordLower = locationKeyword.toLowerCase();
+
+        return resources.stream()
+                .filter(r -> r.getProvider() != null
+                        && r.getProvider().getLocation() != null
+                        && r.getProvider().getLocation().toLowerCase().contains(keywordLower))
+                .collect(Collectors.toList());
+    }
+
     public String getResourceCategory() {
         return resourceCategory;
     }

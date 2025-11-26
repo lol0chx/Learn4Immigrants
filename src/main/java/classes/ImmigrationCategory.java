@@ -5,4 +5,3 @@ public enum ImmigrationCategory {
     ASYLUM_SEEKER,
     OTHER
 }
-

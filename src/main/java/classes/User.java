@@ -12,6 +12,7 @@ public class User {
     private String location;
     private String password;
 
+    // Logged-in user (has password)
     public User(String name, String email, int age, ImmigrationCategory immigrationCategory, String location, String password) {
         this.name = name;
         this.email = email;
@@ -21,6 +22,8 @@ public class User {
         this.location = location;
         this.password = password;
     }
+
+    // Guest user (no password)
     public User(String name, String email, int age, ImmigrationCategory immigrationCategory, String location) {
         this.name = name;
         this.email = email;
@@ -28,10 +31,7 @@ public class User {
         this.immigrationCategory = immigrationCategory;
         this.savedResources = new ArrayList<>();
         this.location = location;
-
     }
-
-
 
     public String getLocation() {
         return location;
@@ -82,8 +82,7 @@ public class User {
     }
 
     public List<EducationalResource> viewAvailableResources() {
-        // This method would typically fetch resources from a repository or service
-        // For now, returning an empty list as placeholder
+        // Placeholder
         return new ArrayList<>();
     }
 
@@ -97,4 +96,3 @@ public class User {
         return new ArrayList<>(savedResources);
     }
 }
-
