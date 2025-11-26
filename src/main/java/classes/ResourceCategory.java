@@ -6,4 +6,6 @@ public enum ResourceCategory {
     UNIVERSITY,
     SCHOLARSHIP,
     OTHER
+
 }
+

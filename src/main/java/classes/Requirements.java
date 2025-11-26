@@ -10,15 +10,17 @@ public class Requirements {
 
     // Optional/future attributes
     private String languageProficiency; // e.g., "English", "Spanish", "None"
-    private String priorEducation;      // e.g., "High School", "Bachelor's", "None"
+    private String priorEducation;       // e.g., "High School", "Bachelor's", "None"
 
+    // Constructor with required fields
     public Requirements(int minAge, List<ImmigrationCategory> eligibleCategories) {
         this.minAge = minAge;
         this.eligibleCategories = new ArrayList<>(eligibleCategories);
-        this.languageProficiency = "None";
-        this.priorEducation = "None";
+        this.languageProficiency = "None"; // default
+        this.priorEducation = "None";      // default
     }
 
+    // Constructor with all fields (for future use)
     public Requirements(int minAge, List<ImmigrationCategory> eligibleCategories,
                         String languageProficiency, String priorEducation) {
         this.minAge = minAge;
@@ -27,24 +29,39 @@ public class Requirements {
         this.priorEducation = priorEducation;
     }
 
+    /**
+     * Main eligibility checking method
+     * Checks if a user meets all the requirements
+     * user The user to check eligibility for
+     * return true if user is eligible, false otherwise
+     */
     public boolean isEligible(User user) {
+        // Check age requirement
         if (user.getAge() < minAge) {
             return false;
         }
 
+        // Check immigration category
+        // If no specific categories are required (empty list), everyone is eligible
         if (eligibleCategories.isEmpty()) {
             return true;
         }
 
+        // Check if user's immigration category is in the eligible list
         if (!eligibleCategories.contains(user.getImmigrationCategory())) {
             return false;
         }
 
-        // Future: language, priorEducation checks
+        // Future: Add checks for language proficiency and prior education
+        // For now, these are optional, so we don't filter by them
 
         return true;
     }
 
+    /**
+     * Get a human-readable description of the requirements
+     * Useful for displaying to users
+     */
     public String getRequirementsDescription() {
         StringBuilder description = new StringBuilder();
 
@@ -74,6 +91,7 @@ public class Requirements {
         return description.toString();
     }
 
+    // Getters
     public int getMinAge() {
         return minAge;
     }
@@ -90,6 +108,7 @@ public class Requirements {
         return priorEducation;
     }
 
+    // Setters
     public void setMinAge(int minAge) {
         this.minAge = minAge;
     }

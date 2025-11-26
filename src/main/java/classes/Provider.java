@@ -3,7 +3,7 @@ package classes;
 public class Provider {
     private String name;
     private String contactInfo;
-    private String location;
+    private String location;   // NEW
 
     public Provider(String name, String contactInfo, String location) {
         this.name = name;
@@ -11,11 +11,12 @@ public class Provider {
         this.location = location;
     }
 
-    // optional 2-arg constructor if needed elsewhere
+    // If you still need the old 2-arg constructor, keep it too:
     public Provider(String name, String contactInfo) {
         this(name, contactInfo, null);
     }
 
+    // Getters & setters
     public String getName() {
         return name;
     }
@@ -40,9 +41,9 @@ public class Provider {
         this.location = location;
     }
 
+    // method
     public String getInfo() {
-        return "Provider: " + name +
-                " | Contact: " + contactInfo +
+        return "Provider: " + name + " | Contact: " + contactInfo +
                 (location != null ? " | Location: " + location : "");
     }
 }

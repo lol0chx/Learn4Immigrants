@@ -36,7 +36,7 @@ public class EducationalResource {
                 "URL: " + url + "\n";
     }
 
-    // Static methods for filtering, sorting, grouping, mapping, and counting using Streams
+    // -------- Stream helper methods --------
 
     public static List<EducationalResource> filterByEligibility(List<EducationalResource> resources, User user) {
         if (resources == null || user == null) {
@@ -89,7 +89,8 @@ public class EducationalResource {
                 .collect(Collectors.groupingBy(EducationalResource::getResourceCategory, Collectors.counting()));
     }
 
-    // Location-based filter using provider.location
+    // -------- NEW: location-based filtering --------
+
     public static List<EducationalResource> filterByLocation(
             List<EducationalResource> resources,
             String locationKeyword
@@ -98,6 +99,7 @@ public class EducationalResource {
             throw new IllegalArgumentException("Resources must not be null");
         }
         if (locationKeyword == null || locationKeyword.isBlank()) {
+            // If user didn't set a location, just return all
             return resources;
         }
 
@@ -108,6 +110,20 @@ public class EducationalResource {
                         && r.getProvider().getLocation() != null
                         && r.getProvider().getLocation().toLowerCase().contains(keywordLower))
                 .collect(Collectors.toList());
+    }
+
+    // -------- Getters --------
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getUrl() {
+        return url;
     }
 
     public String getResourceCategory() {
