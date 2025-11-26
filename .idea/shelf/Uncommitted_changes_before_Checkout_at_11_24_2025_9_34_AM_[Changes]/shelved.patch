@@ -1,0 +1,47 @@
+Index: src/main/java/classes/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package classes;\r\n\r\n//TIP To <b>Run</b> code, press <shortcut actionId=\"Run\"/> or\r\n// click the <icon src=\"AllIcons.Actions.Execute\"/> icon in the gutter.\r\npublic class Main {\r\n    static void main() {\r\n        //TIP Press <shortcut actionId=\"ShowIntentionActions\"/> with your caret at the highlighted text\r\n        // to see how IntelliJ IDEA suggests fixing it.\r\n        IO.println(String.format(\"Hello and welcome!\"));\r\n\r\n        for (int i = 1; i <= 5; i++) {\r\n            //TIP Press <shortcut actionId=\"Debug\"/> to start debugging your code. We have set one <icon src=\"AllIcons.Debugger.Db_set_breakpoint\"/> breakpoint\r\n            // for you, but you can always add more by pressing <shortcut actionId=\"ToggleLineBreakpoint\"/>.\r\n            IO.println(\"i = \" + i);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/classes/Main.java b/src/main/java/classes/Main.java
+--- a/src/main/java/classes/Main.java	(revision 64a9f713d2ad95e738691ef1596772dc00ad6ed7)
++++ b/src/main/java/classes/Main.java	(date 1763761038840)
+@@ -1,17 +1,13 @@
+ package classes;
+ 
++import java.io.PrintStream;
++
+ //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+ // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+ public class Main {
++
++
+     static void main() {
+-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+-        // to see how IntelliJ IDEA suggests fixing it.
+-        IO.println(String.format("Hello and welcome!"));
+ 
+-        for (int i = 1; i <= 5; i++) {
+-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+-            IO.println("i = " + i);
+-        }
+     }
+ }
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_21\" default=\"true\" project-jdk-name=\"21\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 64a9f713d2ad95e738691ef1596772dc00ad6ed7)
++++ b/.idea/misc.xml	(date 1764005596194)
+@@ -1,4 +1,3 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+   <component name="MavenProjectsManager">

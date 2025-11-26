@@ -4,6 +4,8 @@ public enum ResourceCategory {
     LANGUAGE,
     VOCATIONAL,
     UNIVERSITY,
-    SCHOLARSHIP
+    SCHOLARSHIP,
+    OTHER
+
 }
 

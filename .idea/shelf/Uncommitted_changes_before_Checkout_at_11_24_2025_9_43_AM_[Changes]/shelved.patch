@@ -1,0 +1,72 @@
+Index: src/main/java/classes/User.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/classes/User.java b/src/main/java/classes/User.java
+new file mode 100644
+--- /dev/null	(date 1764006158050)
++++ b/src/main/java/classes/User.java	(date 1764006158050)
+@@ -0,0 +1,5 @@
++package classes;
++
++public class User {
++
++}
+Index: src/main/java/classes/ResourceCategory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/classes/ResourceCategory.java b/src/main/java/classes/ResourceCategory.java
+new file mode 100644
+--- /dev/null	(date 1764006158050)
++++ b/src/main/java/classes/ResourceCategory.java	(date 1764006158050)
+@@ -0,0 +1,9 @@
++package classes;
++
++public enum ResourceCategory {
++    LANGUAGE,
++    VOCATIONAL,
++    UNIVERSITY,
++    SCHOLARSHIP
++}
++
+Index: src/main/java/classes/ImmigrationCategory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/classes/ImmigrationCategory.java b/src/main/java/classes/ImmigrationCategory.java
+new file mode 100644
+--- /dev/null	(date 1764006158049)
++++ b/src/main/java/classes/ImmigrationCategory.java	(date 1764006158049)
+@@ -0,0 +1,8 @@
++package classes;
++
++public enum ImmigrationCategory {
++    GREEN_CARD_HOLDER,
++    ASYLUM_SEEKER,
++    OTHER
++}
++
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_24_PREVIEW\" project-jdk-name=\"25\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision d882fccaad1be4963f031c86c4d053ff5dcfa9fd)
++++ b/.idea/misc.xml	(date 1764006158048)
+@@ -7,7 +7,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_24_PREVIEW" project-jdk-name="25" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
